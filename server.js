@@ -1,15 +1,14 @@
+
 //setup express to work as a server
 var express = require("express");
 var app = express();
 app.set("port", process.env.PORT || 3000);
+console.log("express = "+express);
+console.log("app = "+app);
+exports.appServer = app
 
-// setup path to work
-var path = require("path");
-
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, 'app\\public\\home.html'));
-})
-
+//import the routes files
+var htmlRoutes = require('./app/routing/html-routes.js')
 
 
 //set express to listen to a port
