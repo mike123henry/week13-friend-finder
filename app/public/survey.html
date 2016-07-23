@@ -10,16 +10,16 @@
     <h2>Survey Questions</h2>
     <hr>
     <h3><strong>About You</strong></h3>
-    <form action="" method="POST" role="form">
+    <form action="/newFriend" method="POST" role="form">
 
       <div class="form-group">
           <label for="">Name (Required)</label>
-          <input type="text" class="form-control" id="name" placeholder="" required="true" tabindex="1">
+          <input type="text" class="form-control" id="name" name="name" placeholder="" required="true" tabindex="1">
       </div>
 
       <div class="form-group">
           <label for="">Link to Photo Image (Required)</label>
-          <input type="text" class="form-control" id="photo" placeholder="" required="true" tabindex="2">
+          <input type="text" class="form-control" id="photo" name="photo" placeholder="" required="true" tabindex="2">
       </div>
       <hr>
 
@@ -27,7 +27,7 @@
         <h3 class="text-left"><strong>Question 1</strong></h3>
         <h4>Your mind is always buzzing with unexplored ideas and plans</h4>
         <div class="col-sm-3">
-          <select id="Question1" data-placeholder="Choose an Answer" class="chosen-select" tabindex="3" >
+          <select id="question1" name="question1" data-placeholder="Choose an Answer" class="chosen-select" tabindex="3" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -43,7 +43,7 @@
         <h3 class="text-left "><strong>Question 2</strong></h3>
         <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
         <div class="col-sm-3">
-          <select id="Question2" data-placeholder="Choose an Answer" class="chosen-select" tabindex="4" >
+          <select id="question2" name="question2" data-placeholder="Choose an Answer" class="chosen-select" tabindex="4" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -59,7 +59,7 @@
         <h3><strong>Question 3</strong></h3>
         <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
         <div class="col-sm-3">
-          <select id="Question3" data-placeholder="Choose an Answer" class="chosen-select" tabindex="5" >
+          <select id="question3" name="question3" data-placeholder="Choose an Answer" class="chosen-select" tabindex="5" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -75,7 +75,7 @@
         <h3><strong>Question 4</strong></h3>
         <h4>You rarely do something just out of sheer curiosity.</h4>
         <div class="col-sm-3">
-          <select id="Question4" data-placeholder="Choose an Answer" class="chosen-select" tabindex="6" >
+          <select id="question4" name="question4" data-placeholder="Choose an Answer" class="chosen-select" tabindex="6" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -91,7 +91,7 @@
         <h3><strong>Question 5</strong></h3>
         <h4>People can rarely upset you.</h4>
         <div class="col-sm-3">
-          <select id="Question5" data-placeholder="Choose an Answer" class="chosen-select" tabindex="7" >
+          <select id="question5" name="question5" data-placeholder="Choose an Answer" class="chosen-select" tabindex="7" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -107,7 +107,7 @@
         <h3><strong>Question 6</strong></h3>
         <h4>It is often difficult for you to relate to other people’s feelings.</h4>
         <div class="col-sm-3">
-          <select id="Question6" data-placeholder="Choose an Answer" class="chosen-select" tabindex="8" >
+          <select id="question6" name="question6" data-placeholder="Choose an Answer" class="chosen-select" tabindex="8" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -123,7 +123,7 @@
         <h3><strong>Question 7</strong></h3>
         <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
         <div class="col-sm-3">
-          <select id="Question7" data-placeholder="Choose an Answer" class="chosen-select" tabindex="9" >
+          <select id="question7"  name="question7" data-placeholder="Choose an Answer" class="chosen-select" tabindex="9" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -139,7 +139,7 @@
         <h3><strong>Question 8</strong></h3>
         <h4>You rarely get carried away by fantasies and ideas.</h4>
         <div class="col-sm-3">
-          <select id="Question8" data-placeholder="Choose an Answer" class="chosen-select" tabindex="10" >
+          <select id="question8" name="question8" data-placeholder="Choose an Answer" class="chosen-select" tabindex="10" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -155,7 +155,7 @@
         <h3><strong>Question 9</strong></h3>
         <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
         <div class="col-sm-3">
-          <select id="Question9" data-placeholder="Choose an Answer" class="chosen-select" tabindex="11" >
+          <select id="question9" name="question9" data-placeholder="Choose an Answer" class="chosen-select" tabindex="11" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -171,7 +171,7 @@
         <h3><strong>Question 10</strong></h3>
         <h4>You feel more energetic after spending time with a group of people.</h4>
         <div class="col-sm-3">
-          <select id="Question10" data-placeholder="Choose an Answer" class="chosen-select" tabindex="12" >
+          <select id="question10" name="question10" data-placeholder="Choose an Answer" class="chosen-select" tabindex="12" >
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -197,5 +197,7 @@
             <a href="/api/friends">API Friends List</a> | <a href="https://github.com/mike123henry/week13-friend-finder" target="_blank">Github Repo</a>
         </div>
     </footer>
+
+
 </body>
 </html>
