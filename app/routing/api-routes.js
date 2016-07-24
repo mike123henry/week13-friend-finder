@@ -1,6 +1,6 @@
-var appApi = require('..\\..\\server.js');
-var pathApi = require('..\\..\\server.js');
-var friendsList = require('..\\data\\friends.js');
+var appApi = require('../../server.js');
+var pathApi = require('../../server.js');
+var friendsList = require('../data/friends.js');
 
 
 
